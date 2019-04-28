@@ -6,9 +6,7 @@ npm i nodemon
 
 Para iniciar o servidor digite: 
 nodemon
-```
 
-```
 Excluir todo o conteudo do diretório pubilc/ e incluir todo os diretorios css,js,img do projeto CEEP
 
 Excluir todo o conteudo do diretório views/ e copiar o index.html do projeto CEEP para o diretório views/ e mudar a extensão para .ejs
@@ -18,7 +16,7 @@ Criar um diretório chamado api/ e dentro dele os diretorios controllers/ e rout
 ```
 ## Estrutura de arquivos
 
-<img src="https://sambrmg.github.io/Curso-W47-8113/estrutura.png" alt="simple menu js" style="width: 150px">
+<img src="https://sambrmg.github.io/Curso-W47-8113/estrutura.png" alt="simple menu js" style="width: 200px !important;">
 
 
 ## Conteúdo de arquivos
