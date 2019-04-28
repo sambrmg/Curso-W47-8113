@@ -16,8 +16,12 @@ Excluir todo o conteudo do diretório views/ e copiar o index.html do projeto CE
 Criar um diretório chamado api/ e dentro dele os diretorios controllers/ e routes/
 
 ```
+## Estrutura de arquivos
 
-<img src="https://sambrmg.github.io/Curso-W47-8113/estrutura.png" alt="simple menu js">
+<img src="https://sambrmg.github.io/Curso-W47-8113/estrutura.png" alt="simple menu js" style="width: 150px">
+
+
+## Conteúdo de arquivos
 
 **index.js**
 
