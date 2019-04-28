@@ -17,7 +17,7 @@ Criar um diretório chamado api/ e dentro dele os diretorios controllers/ e rout
 
 ```
 
-
+<img src="https://sambrmg.github.io/Curso-W47-8113/estrutura.png" alt="simple menu js">
 
 **index.js**
 
