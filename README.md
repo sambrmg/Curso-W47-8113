@@ -61,3 +61,23 @@ router.get('/listar', instrucoesController.listar );
 
 module.exports = router;
 ```
+
+
+**api/models/instrucoes.models.js**
+
+```javascript
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+let CartoesSchema = new Schema({
+    conteudo: {type: String, required: true},
+    cor: {type: String, required: true}
+});
+
+let InstrucoesSchema = new Schema({
+    usuario: {type: String, required: true},
+    cartoes: [CartoesSchema],
+});
+
+module.exports = mongoose.model('Instrucoes', InstrucoesSchema);
+```
