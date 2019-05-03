@@ -2,7 +2,8 @@
 
 ```
 Depois de seguir o tutorial do heroku executar o comando a seguir:
-npm i nodemon mongoose body-parser
+npm i mongoose body-parser
+npm i nodemon --save-dev
 
 Para iniciar o servidor digite: 
 nodemon
