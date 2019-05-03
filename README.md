@@ -83,24 +83,37 @@ router.get('/listar', instrucoesController.listar );
 module.exports = router;
 ```
 
+**api/routes/cartoes.route.js**
 
-**api/models/instrucoes.models.js**
+```javascript
+const express = require('express');
+const router = express.Router();
+
+const cartoesController = require('../controllers/cartoes.controller');
+
+router.get('/:usuario', cartoesController.cartoesPorEmail );
+router.post('/incluir', cartoesController.incluir );
+
+module.exports = router;
+```
+
+**api/models/cartoes.models.js**
 
 ```javascript
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-let CartoesSchema = new Schema({
+let CartaoSchema = new Schema({
     conteudo: {type: String, required: true},
     cor: {type: String, required: true}
 });
 
-let InstrucoesSchema = new Schema({
+let CartoesSchema = new Schema({
     usuario: {type: String, required: true},
-    cartoes: [CartoesSchema],
+    cartoes: [CartaoSchema],
 });
 
-module.exports = mongoose.model('Instrucoes', InstrucoesSchema);
+module.exports = mongoose.model('Cartoes', CartoesSchema);
 ```
 **api/controllers/cartoes.controller.js**
 
