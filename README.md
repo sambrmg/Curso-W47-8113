@@ -66,10 +66,22 @@ express()
 
 ```javascript
 exports.listar = function (req, res) {
-    res.send([
-        "Bem Vindo ao Ceep",
-        "Clique no btn Linhas para mudar o layout"
-    ]);
+    res.send({
+        instrucoes: [
+            {
+                conteudo: "Bem vindo ao Ceep!",
+                cor: "#FFAA10"
+            },
+            {
+                conteudo: "O site é otimizado para celulares!",
+                cor: "#45AAEE"
+            },
+            {
+                conteudo: "Para mudar o layout, clique no botão Linha do cabeçalho",
+                cor: "#FF1010"
+            }
+        ]
+    });
 };
 ```
 
